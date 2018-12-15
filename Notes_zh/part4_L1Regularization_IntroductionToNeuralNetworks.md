@@ -35,17 +35,17 @@ L2 和 L1 采用不同的方式降低权重：
 >
 > 隐藏层(hidden layer)：[**神经网络**](https://developers.google.cn/machine-learning/crash-course/glossary#neural_network)中的合成层，介于[**输入层**](https://developers.google.cn/machine-learning/crash-course/glossary#input_layer)（即特征）和[**输出层**](https://developers.google.cn/machine-learning/crash-course/glossary#output_layer)（即预测）之间。神经网络包含一个或多个隐藏层。
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/note/img/google-7.png)
+![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/google-7.png)
 
 #### 激活函数
 
 这样添加隐藏层后，线性函数与线性函数的组合依然是线性的，所以我们通过添加激活函数（非线性转化层）来使模型可以处理非线性问题。
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/note/img/google-8.png)
+![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/google-8.png)
 
 > 激活函数 (activation function)：一种函数（例如 [**ReLU**](https://developers.google.cn/machine-learning/crash-course/glossary#ReLU) 或 [**S 型**](https://developers.google.cn/machine-learning/crash-course/glossary#sigmoid_function)函数），用于对上一层的所有输入求加权和，然后生成一个输出值（通常为非线性值），并将其传递给下一层。
 >
-> ![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/note/img/google-9.png)
+> ![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/google-9.png)
 >
 > ReLU函数：修正线性单元(Rectified Linear Unit)，规则为：F(x)=max(0,x)
 
@@ -53,7 +53,7 @@ L2 和 L1 采用不同的方式降低权重：
 
 实际上所有的函数都可以作为激活函数，我们假设激活函数 $\sigma$ ，网络中节点的值为 $v$ :
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/note/img/17.png)
+![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/17.png)
 
 #### 组件
 

@@ -22,7 +22,7 @@
 
 为了防止对测试集的过拟合，将数据集分为三个子集（新增一个验证集）
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/note/img/google-2.jpg)
+![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/google-2.jpg)
 
 
 
@@ -32,7 +32,7 @@
 
 定义：将原始数据转化为特征矢量
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/note/img/google-3.jpg)
+![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/google-3.jpg)
 
 对于一些无法直接转化为数字的数据（如字符串），通过映射，独热编码转化：
 
