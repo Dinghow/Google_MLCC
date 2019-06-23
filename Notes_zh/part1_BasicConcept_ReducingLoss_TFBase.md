@@ -38,7 +38,7 @@
 
 均方误差（MSE）：
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/1.png)
+![](./img/1.png)
 
 ### 3.降低损失
 
@@ -60,7 +60,7 @@
 
 #### 迭代方法
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/google-1.jpg)
+![](./img/google-1.jpg)
 
 ### 4.使用TF基础
 

@@ -16,7 +16,7 @@
 
   > **Batch normaliaztion**: 批标准化, 和普通的数据标准化类似, 是将分散的数据统一的一种做法, 也是优化神经网络的一种方法
   >
-  > ![](https://github.com/Dinghow/Google_MLCC/raw/master/Notes_zhs_zh/img/19.png)
+  > ![](./img/19.png)
 
 - ReLu单元消失：一旦 ReLU 单元的加权和低于 0，ReLU 单元就可能会停滞，梯度无法反向传播。由于梯度的来源被切断，ReLU 的输入可能无法作出足够的改变来使加权和恢复到 0 以上。
 
@@ -36,7 +36,7 @@
 
 一对多提供了一种利用二元分类的方法，对于N个可行的解决方案，就包括N个单独的二元分类器
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/google-10.png)
+![](./img/google-10.png)
 
 #### Softmax
 
@@ -46,7 +46,7 @@
 
 Softmax函数的表达式为：
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/18.png)
+![](./img/18.png)
 
 而在神经网络中，Softmax层必须有和输出层一样的节点数
 
@@ -82,4 +82,4 @@ Softmax函数的表达式为：
 
 可以将嵌入作为目标任务的神经网络的一部分进行学习。如图所示，嵌入单元实际上就是大小为d（采用d维嵌套，即可以通过d维的矢量在d维空间下表示出一个样本）的一个特殊类型的隐藏单元。嵌入层只是一个隐藏层，无需单独的训练过程，像之前一样通过反向传播即可进行训练。
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/google-11.png)
+![](./img/google-11.png)

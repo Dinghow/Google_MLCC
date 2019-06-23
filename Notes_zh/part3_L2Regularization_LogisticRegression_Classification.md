@@ -6,9 +6,9 @@
 
 为了避免训练集数据过拟合，应该求**结构风险最小化**（最小化损失和复杂度）：
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/2.png)
+![](./img/2.png)
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/google-4.png)
+![](./img/google-4.png)
 
 而衡量模型复杂度有两种常见方式：
 
@@ -16,7 +16,7 @@
 
   可以使用 **L2 正则化**公式来量化复杂度，该公式将正则化项定义为所有特征权重的平方和：
 
-  ![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/3.png)
+  ![](./img/3.png)
 
 - 用具有非零权重的特征总数的函数
 
@@ -37,7 +37,7 @@ lambda又称**正则化率**
 
 即：
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/4.png)
+![](./img/4.png)
 
 增加lambda值将增强正则化的效果（直方图更剧烈），降低lambda值则会得到比较平缓的直方图
 
@@ -55,24 +55,24 @@ lambda又称**正则化率**
 
 如果 z 表示使用逻辑回归训练的模型的线性层的输出，则 S 型(z) 函数会生成一个介于 0 和 1 之间的值（概率）。用数学方法表示为：
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/5.png)
+![](./img/5.png)
 
 - y' 是逻辑回归模型针对特定样本的输出
 
 - z 是 b + w1x1 + w2x2 + … wNxN，又称为对数几率，因为z的反函数为：
 
-  ![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/6.png)
+  ![](./img/6.png)
 
   - w:该模型学习的权重和偏差
   - x:特定样本的特征值
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/google-5.png)
+![](./img/google-5.png)
 
 #### 损失函数
 
 对数损失函数：
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/7.png)
+![](./img/7.png)
 
 - (x,y)&straightepsilon;D 是包含很多有标签样本 (x,y) 的数据集。
 - “y”是有标签样本中的标签。由于这是逻辑回归，因此“y”的每个值必须是 0 或 1。
@@ -109,11 +109,11 @@ TP,TN不会造成损失
 
 定义：预测正确的结果所占比例
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/8.png)
+![](./img/8.png)
 
 二分类问题中
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/9.png)
+![](./img/9.png)
 
 #### 精确率和召回率（Precision & Recall）
 
@@ -121,29 +121,29 @@ TP,TN不会造成损失
 
 定义：表示的是预测为正的样本中有多少是真正的正样本，又称为**查准率**
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/10.png)
+![](./img/10.png)
 
 ##### 召回率
 
 定义：表示真正的正样本中有多少被正确预测，又称为**查全率**
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/11.png)
+![](./img/11.png)
 
 查准和查全二者之间是矛盾的。查准率高（尽可能只挑选有把握的），那查全率就会低；查全率高（试想把所有类别都预测为正例），那查准率就会低。
 
 为了综合考虑二者，常常采用$F_1$值：
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/12.png)
+![](./img/12.png)
 
 #### ROC和曲线下面积
 
 真正例率	(TPR)：等同于召回率
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/13.png)
+![](./img/13.png)
 
 假正例率(FPR)：
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/14.png)
+![](./img/14.png)
 
 ROC 曲线用于绘制采用不同分类阈值时的 TPR 与 FPR
 
@@ -153,15 +153,15 @@ ROC 曲线用于绘制采用不同分类阈值时的 TPR 与 FPR
 
 真正例率(TPR)：等同于召回率
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/15.png)
+![](./img/15.png)
 
 假正例率(FPR)：
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/16.png)
+![](./img/16.png)
 
 ROC(Receiver Operating Characteristic Curve)曲线用于绘制采用不同分类阈值时的 TPR 与 FPR，横轴为FPR，纵轴为TPR
 
-![](https://github.com/Dinghow/MyRoadToMachineLearning/raw/master/Notes_zh/img/google-6.png)
+![](./img/google-6.png)
 
 ROC曲线的主要作用：
 
